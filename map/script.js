@@ -105,8 +105,9 @@ window.onload = async function () {
         postBoxes.forEach((post) => {
             let curName = post.querySelector('span').textContent;
             curName = curName.split(':')[1].trim().toLowerCase();
+            const curBranchName = post.querySelector('span:nth-child(2)').textContent.split(':')[1].trim().toLowerCase();
 
-            if (toSearch === curName) {
+            if (toSearch === curName || toSearch == curBranchName) {
                 updatedPosts.push(post);
             }
         });
