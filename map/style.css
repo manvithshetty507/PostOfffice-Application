@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #575A85;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.header > .ip {
+    padding-left: 20px;
+}
+
+#ip__add {
+    color: white;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.location > .lat__long , .city__region , .org__host {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.header span {
+    padding: 10px;
+}
+
+.map {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.map > span {
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.527);
+} 
+
+.details {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.details > .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading > h1{
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.content >span {
+    padding: 5px;
+}
+
+.details > bottom {
+    color: white;
+}
+
+.search__bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-icons {
+    color: black;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.inputs > input {
+    border: none;
+    outline: none;
+    font-size: 22px;
+    width: 100%;
+}
+
+.all__posts {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+
+.post__box {
+    display: flex;
+    flex-direction: column;
+    background-color: #575A85;
+    color: rgba(255, 255, 255, 0.589);
+    border-radius: 5px;
+    margin: 25px;
+}
+
+.post__box > span {
+    padding: 15px;
+    font-size: 22px;
+}

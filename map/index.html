@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="ip">
+            <h1>IP Address <span id="ip__add"></span></h1>
+        </div>
+        <div class="location">
+            <div class="lat__long">
+                <span id="lat">Lat :</span>
+                <span id="long">Long:</span>
+            </div>
+            <div class="city__region">
+                <span id="city">City</span>
+                <span id="region">region</span>
+            </div>
+            <div class="org__host">
+                <span id="org">Orag</span>
+                <span id="host">HostName</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <span>Your Current Location</span>
+        <!-- <iframe 
+            src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" 
+            width="700" 
+            height="400" 
+            frameborder="0"
+            style="border:0">
+        </iframe> -->
+    </div>
+
+    <div class="details">
+        <div class="top">
+            <div class="heading"> <h1>More Information About You</h1> </div>
+            <div class="content">
+                <span id="time__zone"></span>
+                <span id="date"></span>
+                <span id="pin"></span>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="heading"><h1>Post Offices near You</h1></div>
+            <div class="search__bar">
+                <div class="inputs">
+                    <span class="material-icons">
+                        search
+                        </span>
+                    <input type="text" placeholder="Search By Name" class="search__input">
+                </div>
+            </div>
+            <div class="all__posts">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
